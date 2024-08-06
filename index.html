@@ -5,201 +5,494 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>딤딤섬 클론코딩</title>
+    <link rel="stylesheet" href="./style/layout.css">
 </head>
 
 <body>
-    <header>
-        <div id="header">
-            <nav id="first_nav">
-                <ul class="navigation">
-                    <li id="home">
-                        <a href="">
-                            홈
-                        </a>
-                    </li>
-                    <li id="introduction">
-                        <a href="">
-                            딤딤섬 소개
-                        </a>
-                    </li>
-                    <li id="menu">
-                        <a href="">
-                            메뉴 <span id="num">4</span>
-                        </a>
-                    </li>
-                    <li class="spot" id="parnas">
-                        <a href="">
-                            딤딤섬 파르나스몰점 <span id="num">2</span>
-                        </a>
-                    </li>
-                    <li class="spot" id="central-city">
-                        <a href="">
-                            딤딤섬 센트럴시티점 <span id="num">2</span>
-                        </a>
-                    </li>
-                    <li class="spot" id="lotte-world">
-                        <a href="">
-                            딤딤섬 롯데월드몰점 <span id="num">2</span>
-                        </a>
-                    </li>
-                    <li class="spot" id="myung-dong">
-                        <a href="">
-                            딤딤섬 명동점 <span id="num">2</span>
-                        </a>
-                    </li>
-                    <li class="spot" id="dae-gu">
-                        <a href="">
-                            딤딤섬 대구점 <span id="num">2</span>
-                        </a>
-                    </li>
-                    <li class="spot" id="centum-city">
-                        <a href="">
-                            딤딤섬 센텀시티점 <span id="num">2</span>
-                        </a>
-                    </li>
-                    <li class="spot" id="overseas">
-                        <a href="">
-                            해외매장
-                        </a>
-                    </li>
-                    <li id="sns">
-                        <a href="">
-                            SNS
-                        </a>
-                    </li>
-                    <li id="event">
-                        <a href="">
-                            공지사항 / 이벤트
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <nav id="second_nav">
-                <ul class="navigation">
-                    <!-- 전체보기 눌렀을 때 리스트 -->
-                    <li id="all-view">
-                        <a href="">
-                            <span id="select-img"></span> 전체보기
-                        </a>
-                        <ul id="hdd">
-                            <h3 id="hdd-logo">딤딤섬 <span id="hdd"><a href="">닫기</a></span></h3>
+    <div class="header_background">
+
+    </div>
+    <div id="wrap">
+        <header>
+            <div class="header-area">
+                <div class="box_inner">
+                    <nav class="first_nav">
+                        <ul class="navigation">
                             <li id="home">
-                                <a href="">
+                                <a href="" class="white-text">
                                     홈
                                 </a>
                             </li>
                             <li id="introduction">
-                                <a href="">
+                                <a href="" class="white-text">
                                     딤딤섬 소개
                                 </a>
                             </li>
                             <li id="menu">
-                                <a href="">
+                                <a href="" class="white-text">
                                     메뉴 <span id="num">4</span>
                                 </a>
                             </li>
                             <li class="spot" id="parnas">
-                                <a href="">
+                                <a href="" class="white-text">
                                     딤딤섬 파르나스몰점 <span id="num">2</span>
                                 </a>
                             </li>
                             <li class="spot" id="central-city">
-                                <a href="">
+                                <a href="" class="white-text">
                                     딤딤섬 센트럴시티점 <span id="num">2</span>
                                 </a>
                             </li>
                             <li class="spot" id="lotte-world">
-                                <a href="">
+                                <a href="" class="white-text">
                                     딤딤섬 롯데월드몰점 <span id="num">2</span>
                                 </a>
                             </li>
                             <li class="spot" id="myung-dong">
-                                <a href="">
+                                <a href="" class="white-text">
                                     딤딤섬 명동점 <span id="num">2</span>
                                 </a>
                             </li>
                             <li class="spot" id="dae-gu">
-                                <a href="">
+                                <a href="" class="white-text">
                                     딤딤섬 대구점 <span id="num">2</span>
                                 </a>
                             </li>
                             <li class="spot" id="centum-city">
-                                <a href="">
+                                <a href="" class="white-text">
                                     딤딤섬 센텀시티점 <span id="num">2</span>
                                 </a>
                             </li>
                             <li class="spot" id="overseas">
-                                <a href="">
+                                <a href="" class="white-text">
                                     해외매장
                                 </a>
                             </li>
                             <li id="sns">
-                                <a href="">
+                                <a href="" class="white-text">
                                     SNS
                                 </a>
                             </li>
                             <li id="event">
-                                <a href="">
+                                <a href="" class="white-text">
                                     공지사항 / 이벤트
                                 </a>
                             </li>
                         </ul>
-                        <!-- 전체보기 눌렀을 때 리스트  끝-->
-                    </li>
-                    <li id="login">
-                        <a href="">
-                            로그인
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <contents>
-        <div id="text-info">
-            <p class="small-text">
-                홍콩에서 가장 맛있는 딤섬
-            </p>
-            <p>
-                홍콩에서 시작된 딤섬 전문점 ‘딤딤섬’은 전통 딤섬과 창의적 딤섬을 융합해 새로운 맛을 창조하며 세계적인 미식가들의 사랑을 받고있습니다. 딤딤섬 코리아는 홍콩 본토의 정통적인 딤섬 맛을 구현해내기 위해 홍콩에서 온 수십년 경력의 전문 셰프들이 주방을 지휘하고 있습니다.
-            </p>
-        </div>
-        <div id="index-introduction">
-            <a href="" id="red-text">딤딤섬 소개</a>
-            <a href="" class="direction-img">더보기</a>
-            <div id="section-2">
-                <a href="">-</a>
+                    </nav>
+                    <nav class="second_nav">
+                        <ul class="navigation">
+                            <li>
+                                <a href="" class="white-text">
+                                    전체보기
+                                </a>
+                            </li>
+                            <li id="login">
+                                <a href="" class="white-text">
+                                    로그인
+                                </a>
+                            </li>
+                            <!-- 전체보기 눌렀을 때 리스트 -->
+    
+                            <!-- 전체보기 눌렀을 때 리스트  끝-->
+                        </ul>
+                    </nav>
+                </div>
+                <div class="section-2">
+                    <div id="location">
+                        <div id="logo"></div>
+                        <div class="text">
+                            <h3 class="white-text">
+                                딤딤섬
+                            </h3>
+                            <p>
+                                오리지널 홍콩 딤섬 전문점
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <contents>
+            <div class="text-info">
+                <p class="small-text">
+                    홍콩에서 가장 맛있는 딤섬
+                </p>
                 <p>
-                    블로그 및 가이드북에서 강력히 추천한 홍콩에서 반드시 맛보아야 하는 딤섬 전문점 ‘딤딤섬’이 2016년 12월 한국에 처음으로 매장을 오픈하였습니다. 딤딤섬은 2010년 홍콩 조던에서 오픈하여 전통 딤섬과 창의적인 딤섬을 융합하여 새로운 맛을 창조하고 빠르게 이름이 알려져 4년만에 몽콕, 완차이, 샤틴 등 분점을 오픈하였고, 2012년에는 상해에 진출하여 3개의 점포를 오픈하여 많은 미식가들의 환영을 받았습니다. 2014년 대만에도 매장을 오픈하였으며, 고객들의 성원에 힘입어 2016년 2개의 점포가 더 생겼습니다. 딤딤섬은 창립 이래로 많은 상을 수상하였습니다. 대표적으로 2011년 Time Out에서 ‘홍콩에서 가장 맛있는 딤섬’ 으로 평했고, 2012년 Newsweek지에서 선정한 ‘전세계 101군데 최고의 식당’에 선정되며, ‘세계 유명한 쉐프들의 음식 가이드 2013’에 그 이름을 올리는 등 전세계적으로 전문가들에게 좋은 평을 받아왔습니다. 딤딤섬 코리…
+                    홍콩에서 시작된 딤섬 전문점 ‘딤딤섬’은 전통 딤섬과 창의적 딤섬을 융합해 새로운 맛을 창조하며 세계적인 미식가들의 사랑을 받고있습니다. 딤딤섬 코리아는 홍콩 본토의 정통적인 딤섬
+                    맛을
+                    구현해내기 위해 홍콩에서 온 수십년 경력의 전문 셰프들이 주방을 지휘하고 있습니다.
                 </p>
             </div>
-        </div>
-        <div id="index-menu">
-            <a href="" id="red-text">메뉴</a>
-            <a href="" class="direction-img">더보기</a>
-            <div id="section-3">
-                <ul class="menu-list">
-                    <li id="menu1">
-                        <a href="" class="menu-img" id="white-text">
-                            BEST
-                        </a>
-                        <a href="" class="menu-info">
-                            <h3>하가우</h3>
-                            <p id="gray-text">전분 피에 신선한 새우를 넣어 빚어 쪄내는 광동식 만두.</p>
-                            <p id="red-text">7,500</p>
-                        </a>
-                    </li>
-                </ul>
-                
-
+            <div class="index-introduction">
+                <div class="section-top">
+                    <a href="" class="red-text">딤딤섬 소개</a>
+                    <a href="" class="white-text">더보기</a>
+                </div>
+                <div class="section-2">
+                    <a href="">-</a>
+                    <p>
+                        블로그 및 가이드북에서 강력히 추천한 홍콩에서 반드시 맛보아야 하는 딤섬 전문점 ‘딤딤섬’이 2016년 12월 한국에 처음으로 매장을 오픈하였습니다. 딤딤섬은 2010년
+                        홍콩
+                        조던에서 오픈하여 전통 딤섬과 창의적인 딤섬을 융합하여 새로운 맛을 창조하고 빠르게 이름이 알려져 4년만에 몽콕, 완차이, 샤틴 등 분점을 오픈하였고, 2012년에는 상해에
+                        진출하여 3개의 점포를 오픈하여 많은 미식가들의 환영을 받았습니다. 2014년 대만에도 매장을 오픈하였으며, 고객들의 성원에 힘입어 2016년 2개의 점포가 더 생겼습니다.
+                        딤딤섬은 창립 이래로 많은 상을 수상하였습니다. 대표적으로 2011년 Time Out에서 ‘홍콩에서 가장 맛있는 딤섬’ 으로 평했고, 2012년 Newsweek지에서 선정한
+                        ‘전세계 101군데 최고의 식당’에 선정되며, ‘세계 유명한 쉐프들의 음식 가이드 2013’에 그 이름을 올리는 등 전세계적으로 전문가들에게 좋은 평을 받아왔습니다. 딤딤섬
+                        코리…
+                    </p>
+                </div>
             </div>
+            <div class="index-menu">
+                <div class="section-top">
+                    <a href="" class="red-text">메뉴</a>
+                    <a href="" class="white-text">더보기</a>
+                </div>
+                <div id="section-3">
+                    <div class="menu">
+                        <ul class="menu-list">
+                            <li id="menu1">
+                                <a href="" class="white-text">
+                                    BEST
+                                </a>
+                                <a href="" class="menu-info">
+                                    <h3>하가우</h3>
+                                    <p class="gray-text">전분 피에 신선한 새우를 넣어 빚어 쪄내는 광동식 만두.</p>
+                                    <p class="red-text">7,500</p>
+                                </a>
+                            </li>
+                            <li id="menu2">
+                                <a href="" class="menu-img" id="white-text">
+                                    BEST
+                                </a>
+                                <a href="" class="menu-info">
+                                    <h3>샤오롱바오</h3>
+                                    <p class="gray-text">중국식 만두안에 돼지고기소와 탕즙이 들어있는 인기 딤섬입니다.</p>
+                                    <p class="red-text">6,500</p>
+                                </a>
+                            </li>
+                            <li id="menu3">
+                                <a href="" class="menu-img" id="white-text">
+                                    BEST
+                                </a>
+                                <a href="" class="menu-info">
+                                    <h3>새우 돼지고기 시우마이</h3>
+                                    <p class="gray-text">노란 밀가루 피에 돼지고기와 새우 다진 소를 넣어 꽃 모양으로 빚은 광동식 만두.</p>
+                                    <p class="red-text">6,500</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="index-spot1">
+                <div class="section-top">
+                    <a href="" class="red-text">딤딤섬 파르나스몰점</a>
+                    <a href="" class="white-text">더보기</a>
+                </div>
+                <div class="section-3">
+                    <ul class="parnas-img">
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="index-spot2">
+                <div class="section-top">
+                    <a href="" class="red-text">딤딤섬 센트럴시티점</a>
+                    <a href="" class="white-text">더보기</a>
+                </div>
+                <div class="section-3">
+                    <ul class="central-city-img">
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="index-spot3">
+                <div class="section-top">
+                    <a href="" class="red-text">딤딤섬 롯데월드몰점</a>
+                    <a href="" class="white-text">더보기</a>
+                </div>
+                <div class="section-3">
+                    <ul class="central-city-img">
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="index-spot4">
+                <div class="section-top">
+                    <a href="" class="red-text">딤딤섬 명동점</a>
+                    <a href="" class="white-text">더보기</a>
+                </div>
+                <div class="section-3">
+                    <ul class="myung-dong-img">
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="index-spot5">
+                <div class="section-top">
+                    <a href="" class="red-text">딤딤섬 대구점</a>
+                    <a href="" class="white-text">더보기</a>
+                </div>
+                <div class="section-3">
+                    <ul class="dae-gu-img">
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="index-spot6">
+                <div class="section-top">
+                    <a href="" class="red-text">딤딤섬 센텀시티점</a>
+                    <a href="" class="white-text">더보기</a>
+                </div>
+                <div class="section-1">
+                    <a href="" class="centum-city-img"></a>
+                </div>
+            </div>
+            <div class="index-spot7">
+                <div class="section-top">
+                    <a href="" class="red-text">해외매장</a>
+                    <a href="" class="white-text">더보기</a>
+                </div>
+                <div class="section-2">
+                    <a href="" class="oversea-img"></a>
+                    <div class="oversea-spot">
+                        <div id="hongkong">
+                            <h3 class="red-text">홍콩 香港 Hong Kong</h3>
+                            <p class="gray-text">
+                                조던점 • 21-23 Man Ying Street 몽콕점 • 112 Tung Choi Street 완차이점 • 7 Tin Lok Lane 샤틴점 • Shop
+                                108,
+                                Citylink Plaza
+                            </p>
+                        </div>
+                        <div id="shanghai">
+                            <h3 class="red-text">상해 上海 Shanghai</h3>
+                            <p class="gray-text">
+                                난징시루점 • 889 Nanjing West Road 하이닝루점 • 2/F, ACE Tower, 307 Haining Road 난징루점 • 4/F, China
+                                Ventuietech Building, 819 Nanjing Rd.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="index-sns">
+                <div class="section-top">
+                    <a href="" class="red-text">SNS</a>
+                    <a href="" class="white-text">더보기</a>
+                </div>
+                <div class="sns-text">
+                    <h2>등록된 글이 없습니다.</h2>
+                </div>
+            </div>
+            <div class="index-event">
+                <div class="section-top">
+                    <a href="" class="red-text">공지사항 / 이벤트</a>
+                    <a href="" class="white-text">더보기</a>
+                </div>
+                <div class="sction-3">
+                    <div class="event1">
+                        <h4>[Olive TV 원나잇푸드트립] 대만 - 토니안&이재원</h4>
+                        <div class="text-img-section">
+                            <a href="" class="gray-text">
+                                2017.08.23 원나잇푸드트립 대만편에서 토니안&이재원씨가 딤딤섬 타이페이점을 방문하여 다양한 딤섬을 드시는 모습이 방영되었습니다.
+                            </a>
+                            <a href="" id="event-img1"></a>
+                        </div>
+                        <p>관리자</p>
+                        <p>2017.9.4</p>
+                    </div>
+                    <div class="event2">
+                        <h4>7월 명함 이벤트 당첨자 발표</h4>
+                        <div class="text-img-section">
+                            <a href="" class="gray-text">
+                                7월 한달 간 딤딤섬 대구점을 찾아주시고 이벤트에 응모해주신 정말 많은 고객님들께 감사드리며,
+                                2인 식사권(Set A)에 당첨되신 여덟분 축하드립니다!
+                                당첨자분들께는 개별 연락을 드릴 예정입니다.
+                            </a>
+                            <a href="" id="event-img2"></a>
+                        </div>
+                        <p>관리자</p>
+                        <p>2017.8.4</p>
+                    </div>
+                    <div class="event1">
+                        <h4>[tvN 프리한19] '더 안 먹고 와 티켓팅 부르는 맛 19' 홍콩 똑똑하게 집어삼키기</h4>
+                        <div class="text-img-section">
+                            <a href="" class="gray-text">
+                                tvN 프리한 19 '더 안 먹고 와 티켓팅 부르는 맛 19' 편에서 1위 '홍콩 똑똑하게 집어삼키기'에 홍콩 딤딤섬이 소개되었습니다.
+                            </a>
+                            <a href="" id="event-img3"></a>
+                        </div>
+                        <p>****</p>
+                        <p>2017.7.31</p>
+                    </div>
+                </div>
+            </div>
+            <div class="index-img">
+                <div class="section-top">
+                    <a href="" class="red-text">이미지 갤러리</a>
+                </div>
+                <div class="first-img">
+                    <a href="" id="img1"></a>
+                    <a href="" id="img2"></a>
+                </div>
+                <div class="second-img">
+                    <a href="" id="img3"></a>
+                    <div class="section-2">
+                        <a href="" id="img4"></a>
+                        <div class="2-section">
+                            <a href="" id="img5"></a>
+                            <a href="" id="img6"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-img">
+                    <div class="section-2">
+                        <div class="2-section">
+                            <a href="" id="img7"></a>
+                            <a href="" id="img8"></a>
+                        </div>
+                        <a href="" id="img9"></a>
+                    </div>
+                    <a href="" id="img10"></a>
+                </div>
+                <div class="sub-btn">
+                    <a href="" id="sub-btn">
+                        더보기
+                    </a>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <a href="" class="map">
+                    오시는길
+                </a>
+                <a href="" class="got-to-top">
+                    TOP
+                </a>
+            </div>
+        </contents>
+
+        <footer>
+            <div class="search">
+                <a href="" id="dimdimsum">
+                    딤딤섬@
+                </a>
+                <a href="" id="nocion-help">도움말</a>
+            </div>
+            <div class="report-area">
+                <a href="" id="report">신고하기</a>
+            </div>
+            <div class="sns-area">
+                <a href="" id="naver_blog">네이버 블로그</a>
+                <a href="" id="naver_cafe">네이버 카페</a>
+                <a href="" id="facebook">페이스북</a>
+                <a href="" id="naver_band">네이버 밴드</a>
+            </div>
+        </footer>
+        <div class="all-view hdd">
+            <ul>
+                <h3 id="hdd-logo">딤딤섬 <span id="hdd"><a href="">닫기</a></span></h3>
+                <li id="home">
+                    <a href="">
+                        홈
+                    </a>
+                </li>
+                <li id="introduction">
+                    <a href="">
+                        딤딤섬 소개
+                    </a>
+                </li>
+                <li id="menu">
+                    <a href="">
+                        메뉴 <span id="num">4</span>
+                    </a>
+                </li>
+                <li class="spot" id="parnas">
+                    <a href="">
+                        딤딤섬 파르나스몰점 <span id="num">2</span>
+                    </a>
+                </li>
+                <li class="spot" id="central-city">
+                    <a href="">
+                        딤딤섬 센트럴시티점 <span id="num">2</span>
+                    </a>
+                </li>
+                <li class="spot" id="lotte-world">
+                    <a href="">
+                        딤딤섬 롯데월드몰점 <span id="num">2</span>
+                    </a>
+                </li>
+                <li class="spot" id="myung-dong">
+                    <a href="">
+                        딤딤섬 명동점 <span id="num">2</span>
+                    </a>
+                </li>
+                <li class="spot" id="dae-gu">
+                    <a href="">
+                        딤딤섬 대구점 <span id="num">2</span>
+                    </a>
+                </li>
+                <li class="spot" id="centum-city">
+                    <a href="">
+                        딤딤섬 센텀시티점 <span id="num">2</span>
+                    </a>
+                </li>
+                <li class="spot" id="overseas">
+                    <a href="">
+                        해외매장
+                    </a>
+                </li>
+                <li id="sns">
+                    <a href="">
+                        SNS
+                    </a>
+                </li>
+                <li id="event">
+                    <a href="">
+                        공지사항 / 이벤트
+                    </a>
+                </li>
+            </ul>
         </div>
-    </contents>
-
-    <footer>
-
-    </footer>
+    </div>
 </body>
 
 </html>
