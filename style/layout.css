@@ -11,65 +11,65 @@ a {
   .red-text{
     color: red;
   }
+  .gray-text{
+    color: rgb(151, 149, 149);
+  }
 
+  .clear::after{
+    clear: both;
+    content: '';
+    display: block;
+  }
 
-#wrap{
-    width: 1100px; margin: 0 auto;
-}
-.header_background{
-    width: 100%;margin: 0 auto;
-    height: 400px;
-    background: url(../images/background.jpeg);
-    background-position: center;
-    background-size: cover;
-    filter: brightness(70%);
-    z-index: 1;
-}
-header{
-    margin-top: -400px;
-    width: 100%;
-    height: 400px;
-    z-index: 20;
+.header-intro{
+    width: 100%; min-width: 1280px;
     position: relative;
 }
 
-.all-view,.hdd{
-    display: none;
-}
-.header-area{
-    box-sizing: border-box; margin: 0; padding: 0;
-    width: 100%;height: 400px;
-}
-.box_inner{
-    width: 1100px;height: 100px;
-    display: flex;
-    position: fixed;
-    background-color: rgba(0,0,0,0.11);
-    border-bottom: 1px solid rgba(138, 138, 138, 0.87);
-    margin-bottom: 30px;
-    padding-top: 30px;
-    z-index: 100;
-}
-.navigation{
-    font: bold;
-    padding-bottom: 20px;
-    /* text-align: center; */
+.header-intro .head_area{
+    width: 100%; height: 400px;
+    margin: 0;
+    background: url(../images/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+    position: relative;
+    z-index: 1;
 }
 
-.box_inner .first_nav{
-    width: 85%;
+/* 네비게이션 코드 시작*/
+.nav_bar{
+    width: 100%; height: 90px;
+    position: fixed;
+    justify-content: center;
+    top: 0; right: 0; left: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.11);
+}
+.nav_area{
+    border-bottom: 1px solid rgba(138, 138, 138, 0.87);
+    width: 1100px;height: 90px;
+    display: flex;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    margin-left: 20%;
+}
+
+.nav_area .first_nav{
+    width: 935px;
     overflow: hidden;
     height: 21px;
 }
-.box_inner .first_nav .navigation li{
+.nav_area .first_nav .navigation li{
     display: inline;
     margin:3px;
 }
-.box_inner .first_nav .navigation li:first-child{
+.nav_area .first_nav .navigation li:first-child{
     display: inline;
     margin-left:20px;
 }
-
+/* 둥근원 안에 숫자 표현 */
 #num{
     background-color: rgba(207, 0, 0, 0.89);
     border-radius: 100px;
@@ -79,55 +79,128 @@ header{
     display: inline-block;
     line-height: 19px;
 }
+/* 둥슨원 안에 숫자 표현 끝 */
 
-
-  
-
-
-.box_inner .second_nav{
-    width: 15%;
+.all-view,.hdd{
+    display: none;
 }
 
-.box_inner .second_nav .navigation{
+
+
+.nav_area .second_nav{
+    width: 165px;
+}
+
+.nav_area .second_nav .navigation{
     margin-left: 30px;
 }
-.box_inner .second_nav .navigation li{
+.nav_area .second_nav .navigation li{
     display: inline;
 
 }
 
+/* 네비게이션 코드 끝 */
 
-
-
-.header-area .section-2{
-    width: 100%; height: 300px;
-}
-
-.header-area .section-2 #location{
+/* 배경에 로고 위치하기 코드 */
+.header-intro .section-2{
+    width: 1100px; height: 300px;
     position: absolute;
-    display: flex;
-    top: 180px;
-    width: 1100px;
-   
+    top: 170px;
+    left: 20%;
+    width: 1100px; 
+    z-index: 2;
 }
 
-.header-area .section-2 #logo{
+.header-intro .section-2 #location{   
+    display: flex;
+    margin-left: 20px;
+}
+
+.header-intro .section-2 #logo{
     background: url(../images/logo.jpeg);
     width: 100px; height: 100px;
     background-size: cover;
     border-radius: 50%;
-    z-index: 2;
 }
-.header-area .section-2 .text{
-    margin-left: 20px;
+.header-intro .section-2 .text{
+    
     margin-top: 10px;
     line-height: 30px;
 }
-.header-area .section-2 .text p{
+.header-intro .section-2 .text p{
     font-size: 14px;
     font: bold;
     color: rgba(255, 255, 255, .8);
     display: inline-block;
 }
 
+/* 배경에 로고 위치하기 코드 */
 
+
+
+
+/* 내부 본문 */
+#wrap{
+    width: 1100px; margin: 0 auto;
+}
+/* 간단한 소개 */
+.intro-info{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    line-height: 28px;
+}
+.intro-info p:first-child{
+    font-weight: 700;
+}
+
+.intro-info p:last-child{
+    font-weight: 900;
+    color: #333;
+}
+
+
+/* 간단한 소개 끝 */
+
+
+.section-top{
+    margin: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+.section-top a:first-child{
+    padding-bottom: 10px;
+    border-bottom: 1px solid red;
+    font-size: 18px;
+    font-weight: 600;
+}
+.section-top a:last-child{
+    float: right;
+}
+
+.index-introduction{
+    margin: 30px;
+    width: 100%; height: 422px;
+    display: inline-block;
+}
+
+.index-introduction .section-2{
+    width: 100%;
+}
+
+.index-introduction .section-2 a{
+    background: url(../images/introduction.jpeg);
+    width: 100%; height: 353px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    float: left;
+    width: 530px;
+    height: 353px;
+    margin-right: 40px;
+}
+
+
+
+/* 내부 본문 끝 */
