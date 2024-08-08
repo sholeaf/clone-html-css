@@ -1,10 +1,21 @@
+@font-face {
+    font-family: 'MinSans-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     box-sizing: border-box; margin: 0; padding: 0;
+    
 }
 ul,li,ol{list-style: none;}
 a {
     text-decoration: none;
   }
+p {
+    font-family: 'MinSans-Regular';
+}
   .white-text{
     color: white;
   }
@@ -69,17 +80,23 @@ a {
     display: inline;
     margin-left:20px;
 }
+
+
+
 /* 둥근원 안에 숫자 표현 */
 #num{
+    font-family: 'MinSans-Regular';
     background-color: rgba(207, 0, 0, 0.89);
     border-radius: 100px;
-    font-size: 11px;
+    font-size: 13px;
     padding: 0 8px;
     height: 18px;
     display: inline-block;
     line-height: 19px;
 }
 /* 둥슨원 안에 숫자 표현 끝 */
+
+
 
 .all-view,.hdd{
     display: none;
@@ -121,15 +138,15 @@ a {
     width: 100px; height: 100px;
     background-size: cover;
     border-radius: 50%;
+    margin-right: 20px;
 }
 .header-intro .section-2 .text{
-    
     margin-top: 10px;
     line-height: 30px;
 }
 .header-intro .section-2 .text p{
     font-size: 14px;
-    font: bold;
+    font-weight: bold;
     color: rgba(255, 255, 255, .8);
     display: inline-block;
 }
@@ -146,12 +163,12 @@ a {
 /* 간단한 소개 */
 .intro-info{
     text-align: center;
-    margin-top: 70px;
-    margin-bottom: 60px;
+    margin: 70px 110px ;
     line-height: 28px;
 }
 .intro-info p:first-child{
     font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .intro-info p:last-child{
@@ -161,10 +178,13 @@ a {
 
 
 /* 간단한 소개 끝 */
+[class*="index-spot"]{
+    padding: 30px;
+}
 
-
+/* 이름 - 더보기 라인 */
 .section-top{
-    margin: 30px;
+    margin-bottom: 30px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgb(190, 190, 190);
 }
@@ -177,11 +197,14 @@ a {
 .section-top a:last-child{
     float: right;
 }
+/* 이름 - 더보기 라인 끝 */
 
+/* 딤딤섬 소개 */
 .index-introduction{
-    margin: 30px;
     width: 100%; height: 422px;
     display: inline-block;
+    padding: 0 30px;
+    margin-bottom: 50px;
 }
 
 .index-introduction .section-2{
@@ -190,16 +213,356 @@ a {
 
 .index-introduction .section-2 a{
     background: url(../images/introduction.jpeg);
-    width: 100%; height: 353px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-sizing: border-box;
     float: left;
     width: 530px;
     height: 353px;
     margin-right: 40px;
 }
+
+.index-introduction .section-2 p{
+    text-align: justify;
+    font-size: 15.32px;
+    font-weight: bold;
+    color: #666;;
+    line-height: 25px;
+}
+
+/* 딤딤섬 소개  끝*/
+
+/* 메뉴 */
+.index-menu{
+    width: 100%;
+    padding: 0 30px;
+    margin-bottom: 50px;
+}
+
+.index-menu .section-3{
+    width: 100%;
+}
+
+.index-menu .section-3 .menu-list{
+    width: 100%;
+    display: flex;
+    margin-left: 10px;
+}
+
+.menu-list [id*=menu] {
+    position: relative;
+    display: flex;
+}
+
+.menu-list li [id*=menu] p{
+    font-family: 'MinSans-Regular';
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    line-height: 20px;
+
+    width: 40px; height: 20px;
+    text-align: center;
+    background-color: red;
+    border-radius: 10%;
+    
+    position: absolute;
+    top:15px; left: 15px;
+}
+.menu-list li #menu1 a{
+    background: url(../images/menu1.jpeg);
+    width: 320px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 30px 30px 0px;
+}
+.menu-list li #menu2 a{
+    width: 320px;
+    height: 200px;
+    background: url(../images/menu2.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 30px 30px 0px;
+}
+.menu-list li #menu3 a{
+    width: 320px;
+    height: 200px;
+    background: url(../images/menu3.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 30px 30px 0px;
+}
+
+.menu-list .menu-info{
+    width: 320px;
+    line-height: 20px;
+}
+
+.menu-list .menu-info h3{
+    color: #333;
+    margin-bottom: 15px;
+    letter-spacing: -2px;
+}
+
+.menu-list .menu-info p{
+    padding-right: 110px;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.menu-list .menu-info p:last-child{
+    font-size: 18px;
+}
+
+/* 메뉴 끝 파르나스몰점 */
+
+
+
+.index-spot1 .parnas-img{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.parnas-img li a{
+    display: flex;
+    width: 325px;height: 300px;
+    margin: 20px 32px 20px 0;
+}
+
+.parnas-img #spot1_img1 a{
+    background: url(../images/spot1_img1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.parnas-img #spot1_img2 a{
+    background: url(../images/spot1_img2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.parnas-img #spot1_img3 {
+    margin-right: 0px;
+}
+.parnas-img #spot1_img3 a{
+    background: url(../images/spot1_img3.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 0px;
+}
+
+.parnas-img #spot1_img4 a{
+    background: url(../images/spot1_img4.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.parnas-img #spot1_img5 a{
+    background: url(../images/spot1_img5.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* 파르나스몰점 끝 */
+
+
+/* 센트럴시티점 */
+
+
+
+.index-spot2 .central-city-img{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.central-city-img li a{
+    display: flex;
+    width: 325px;height: 300px;
+    margin: 20px 32px 20px 0;
+}
+
+.central-city-img #spot2_img1 a{
+    background: url(../images/spot2_img1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.central-city-img #spot2_img2 a{
+    background: url(../images/spot2_img2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.central-city-img #spot2_img3 {
+    margin-right: 0px;
+}
+.central-city-img #spot2_img3 a{
+    margin-right: 0px;
+    background: url(../images/spot2_img3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* 센트럴시티점 끝*/
+
+/* 롯데월드몰점 */
+
+
+
+.index-spot3 .lotte-world-img{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lotte-world-img li a{
+    display: flex;
+    width: 325px;height: 300px;
+    margin: 20px 32px 20px 0;
+}
+
+.lotte-world-img #spot3_img1 a{
+    background: url(../images/spot3_img1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.lotte-world-img #spot3_img2 a{
+    background: url(../images/spot3_img2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* 롯데월드몰점 끝 */
+
+/* 명동점 */
+
+
+
+.index-spot4 .myung-dong-img{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.myung-dong-img li a{
+    display: flex;
+    width: 325px;height: 300px;
+    margin: 20px 32px 20px 0;
+}
+
+.myung-dong-img #spot4_img1 a{
+    background: url(../images/spot4_img1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.myung-dong-img #spot4_img2 a{
+    background: url(../images/spot4_img2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.myung-dong-img #spot4_img3 {
+    margin-right: 0px;
+}
+.myung-dong-img #spot4_img3 a{
+    margin-right: 0px;
+    background: url(../images/spot4_img3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* 명동점 끝 */
+
+
+/* 대구점 */
+
+
+.index-spot5 .dae-gu-img{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dae-gu-img li a{
+    display: flex;
+    width: 325px;height: 300px;
+    margin: 20px 32px 20px 0;
+}
+
+.dae-gu-img #spot5_img1 a{
+    background: url(../images/spot5_img1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.dae-gu-img #spot5_img2 a{
+    background: url(../images/spot5_img2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* 대구점 끝 */
+
+/* 센텀시티점 */
+
+
+.index-spot6 .centum-city-img{
+    width: 100%;
+    margin:20px 0;
+}
+
+.centum-city-img a{
+    display: flex;
+    width: 100%; height: 800px;
+    background: url(../images/spot6_img1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+/* 센텀시티점 끝 */
+
+
+.index-spot7 .section-2{
+    display: flex;
+    width: 100%;
+}
+
+.index-spot7 .section-2 a{
+    display: flex;
+    width: 500px; height: 300px;
+    background: url(../images/oversea_img.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.oversea-spot{
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 30px;
+    line-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.oversea-spot h3{
+    margin-bottom: 10px;
+}
+
+
+
+
 
 
 
