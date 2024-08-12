@@ -831,6 +831,80 @@ h5 {
     background-size: cover;
 }
 
+.third-img{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.third-img .section-2{
+    width: 688px;height: 336px;
+    display: flex;
+    margin-right: 20px;
+    flex-wrap: nowrap;
+}
+.third-img .section-2 .section-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 158px;
+    margin-right: 20px;
+}
+
+.third-img .section-2 .section-2 #img7{
+    width: 158px; height: 158px;
+    margin-bottom: 20px;
+    display: flex;
+
+    background: url(../images/menu6.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.third-img .section-2 .section-2 #img8{
+    width: 158px; height: 158px;
+    display: flex;
+
+    background: url(../images/menu7.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.third-img .section-2 #img9{
+    width:510px; height: 336px;
+    display: flex;
+
+    background: url(../images/menu8.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.third-img #img10{
+    width: 336px; height: 336px;
+    margin-right: 0px;
+    display: flex;
+
+    background: url(../images/menu9.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.index-img .sub-btn #sub-btn{
+    display: block;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 4px;
+    width: 147px;
+    height: 46px;
+    margin: 32px auto 0;
+    line-height: 46px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
 
 
 /* 내부 본문 끝 */
