@@ -91,19 +91,57 @@ h5 {
 }
 
 .nav_area .first_nav {
-    width: 935px;
+    width: 955px;
+    position: relative;
     overflow: hidden;
-    height: 21px;
+    height: 23px;
+}
+.nav_area .first_nav .navigation{
+    padding-right: 30px;
+    width: 1396px;
+    overflow: hidden;
+    display: inline-block;
 }
 
 .nav_area .first_nav .navigation li {
+    letter-spacing: -0.8px;
     display: inline;
-    margin: 3px;
+    margin-right: 5px;
+}
+.nav_area .first_nav .navigation li a{
+    display: inline-block;
+}
+
+
+.nav_area .first_nav .navigation li a:hover{
+    border-bottom: 1px solid white;
 }
 
 .nav_area .first_nav .navigation li:first-child {
     display: inline;
-    margin-left: 20px;
+}
+.nav_area #btn{
+    z-index: 110;
+    display: block;
+    position: absolute;
+    /* background: url(../images/icon.png);
+    background-repeat: no-repeat;
+    background-position: -610px -355px;
+    zoom: 1.6; */
+    border: none;
+    background-color: rgba(0,0,0,0);
+    width: 30px;
+    height: 30px;
+    -webkit-font-smoothing: antialiased;
+    right: 560px;
+    top: 24px;
+}
+#btn::after{
+    /* content: '＜'; */
+    color: #fff;
+    content: '〉';
+    font-weight: 900;
+    font-size: 20px;
 }
 
 
@@ -141,7 +179,6 @@ h5 {
 
 .nav_area .second_nav .navigation li {
     display: inline;
-
 }
 
 /* 네비게이션 코드 끝 */
@@ -213,9 +250,9 @@ h5 {
 
 
 /* 간단한 소개 끝 */
-#wrap [class*="index"] {
-    padding: 30px;
-}
+/* #wrap [class*="index"] {
+    margin-bottom: 30px;
+} */
 
 /* 이름 - 더보기 라인 */
 .section-top {
@@ -242,7 +279,6 @@ h5 {
     width: 100%;
     height: 422px;
     display: inline-block;
-    padding: 0 30px;
     margin-bottom: 50px;
 }
 
@@ -275,7 +311,6 @@ h5 {
 /* 메뉴 */
 .index-menu {
     width: 100%;
-    padding: 0 30px;
     margin-bottom: 50px;
 }
 
@@ -286,7 +321,6 @@ h5 {
 .index-menu .section-3 .menu-list {
     width: 100%;
     display: flex;
-    margin-left: 10px;
 }
 
 .menu-list [id*=menu] {
@@ -314,29 +348,31 @@ h5 {
 
 .menu-list li #menu1 a {
     background: url(../images/menu1.jpeg);
-    width: 320px;
-    height: 200px;
+    width: 353px;
+    height: 235px;
     background-size: cover;
     background-position: center;
-    margin: 0 30px 30px 0px;
+    margin-right:20px;
+    margin-bottom: 20px;
 }
 
 .menu-list li #menu2 a {
-    width: 320px;
-    height: 200px;
+    width: 353px;
+    height: 235px;
     background: url(../images/menu2.jpeg);
     background-size: cover;
     background-position: center;
-    margin: 0 30px 30px 0px;
+    margin-right:20px;
+    margin-bottom: 20px;
 }
 
 .menu-list li #menu3 a {
-    width: 320px;
-    height: 200px;
+    width: 353px;
+    height: 235px;
     background: url(../images/menu3.jpeg);
     background-size: cover;
     background-position: center;
-    margin: 0 30px 30px 0px;
+    margin-bottom: 20px;
 }
 
 .menu-list .menu-info {
@@ -369,13 +405,15 @@ h5 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .parnas-img li a {
     display: flex;
-    width: 325px;
-    height: 300px;
-    margin: 20px 32px 20px 0;
+    width: 353.33px;
+    height: 353px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .parnas-img #spot1_img1 a {
@@ -426,13 +464,15 @@ h5 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .central-city-img li a {
     display: flex;
-    width: 325px;
-    height: 300px;
-    margin: 20px 32px 20px 0;
+    width: 353.33px;
+    height: 353px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .central-city-img #spot2_img1 a {
@@ -470,13 +510,15 @@ h5 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .lotte-world-img li a {
     display: flex;
-    width: 325px;
-    height: 300px;
-    margin: 20px 32px 20px 0;
+    width: 353.33px;
+    height: 353px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .lotte-world-img #spot3_img1 a {
@@ -503,13 +545,15 @@ h5 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .myung-dong-img li a {
     display: flex;
-    width: 325px;
-    height: 300px;
-    margin: 20px 32px 20px 0;
+    width: 353.33px;
+    height: 353px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .myung-dong-img #spot4_img1 a {
@@ -541,7 +585,9 @@ h5 {
 
 
 /* 대구점 */
-
+.index-spot5{
+    margin-bottom: 30px;
+}
 
 .index-spot5 .dae-gu-img {
     width: 100%;
@@ -551,9 +597,10 @@ h5 {
 
 .dae-gu-img li a {
     display: flex;
-    width: 325px;
-    height: 300px;
-    margin: 20px 32px 20px 0;
+    width: 353.33px;
+    height: 353px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .dae-gu-img #spot5_img1 a {
@@ -573,10 +620,14 @@ h5 {
 
 /* 센텀시티점 */
 
+.index-spot6{
+    margin-bottom: 70px;
+}
 
 .index-spot6 .centum-city-img {
     width: 100%;
-    margin: 20px 0;
+    margin: 30px 0;
+    
 }
 
 .centum-city-img a {
@@ -591,6 +642,9 @@ h5 {
 /* 센텀시티점 끝 */
 
 /* 해외매장 */
+.index-spot7{
+    margin-bottom: 70px;
+}
 .index-spot7 .section-2 {
     display: flex;
     width: 100%;
@@ -621,7 +675,9 @@ h5 {
 /* 해외매장 끝*/
 
 /* sns */
-
+.index-sns{
+    margin-bottom: 70px;
+}
 .sns-text {
     width: 100%;
     height: 300px;
@@ -650,6 +706,9 @@ h5 {
 
 /* event */
 
+#wrap .index-event{
+    margin-bottom: 70px;
+}
 #wrap .index-event .section-top {
     border: none;
     margin-bottom: 0;
@@ -784,7 +843,7 @@ h5 {
     margin-bottom: 20px;
 }
 .second-img #img3{
-    width: 510px; height: 336px;
+    width: 564px; height: 336px;
     margin-right: 20px;
     
     display: flex;
@@ -794,7 +853,7 @@ h5 {
     background-size: cover;
 }
 .second-img .section-2{
-    width: 510px; height: 336px;
+    width: 516px; height: 336px;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -839,7 +898,7 @@ h5 {
 }
 
 .third-img .section-2{
-    width: 688px;height: 336px;
+    width: 742px;height: 336px;
     display: flex;
     margin-right: 20px;
     flex-wrap: nowrap;
@@ -872,7 +931,7 @@ h5 {
 }
 
 .third-img .section-2 #img9{
-    width:510px; height: 336px;
+    width:564px; height: 336px;
     display: flex;
 
     background: url(../images/menu8.jpeg);
@@ -891,7 +950,9 @@ h5 {
     background-size: cover;
     
 }
-
+.index-img .sub-btn{
+    width: 100%;
+}
 .index-img .sub-btn #sub-btn{
     display: block;
     border: 1px solid rgb(211, 211, 211);
@@ -907,4 +968,318 @@ h5 {
 }
 
 
+.index-img [class*="hdd-img"]{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.hdd-img1 #img11{
+    width: 564px; height: 336px;
+    margin-right: 20px;
+    
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: url(../images/menu10.jpeg);
+}
+.hdd-img1 .section-2{
+    width: 516px; height: 336px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.hdd-img1 .section-2 #img12{
+    width: 336px; height: 336px;
+    margin-right: 20px;
+
+    display: flex;
+    background: url(../images/menu11.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hdd-img1 .section-2 .section-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 158px;
+}
+.hdd-img1 .section-2 .section-2 a{
+    width: 158px; height: 158px;
+    margin-bottom: 20px;
+    display: flex;
+
+    background: url(../images/menu12.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hdd-img1 .section-2 .section-2 a:last-child{
+    display: flex;
+    background: url(../images/menu13.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hdd-img2 .section-2{
+    width: 742px;height: 336px;
+    display: flex;
+    margin-right: 20px;
+    flex-wrap: nowrap;
+}
+.hdd-img2 .section-2 .section-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 158px;
+    margin-right: 20px;
+}
+
+.hdd-img2 .section-2 .section-2 #img15{
+    width: 158px; height: 158px;
+    margin-bottom: 20px;
+    display: flex;
+
+    background: url(../images/menu14.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hdd-img2 .section-2 .section-2 #img16{
+    width: 158px; height: 158px;
+    display: flex;
+
+    background: url(../images/menu15.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hdd-img2 .section-2 #img17{
+    width:564px; height: 336px;
+    display: flex;
+
+    background: url(../images/menu16.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hdd-img2 #img18{
+    width: 336px; height: 336px;
+    margin-right: 0px;
+    display: flex;
+
+    background: url(../images/s1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.hdd-img3 #img19{
+    width: 564px; height: 336px;
+    margin-right: 20px;
+    
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: url(../images/s2.jpeg);
+}
+.hdd-img3 .section-2{
+    width: 516px; height: 336px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.hdd-img3 .section-2 #img20{
+    width: 336px; height: 336px;
+    margin-right: 20px;
+
+    display: flex;
+    background: url(../images/s3.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hdd-img3 .section-2 .section-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 158px;
+}
+.hdd-img3 .section-2 .section-2 a{
+    width: 158px; height: 158px;
+    margin-bottom: 20px;
+    display: flex;
+
+    background: url(../images/s4.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hdd-img3 .section-2 .section-2 a:last-child{
+    display: flex;
+    background: url(../images/s5.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hdd-img4 .section-2{
+    width: 742px;height: 336px;
+    display: flex;
+    margin-right: 20px;
+    flex-wrap: nowrap;
+}
+.hdd-img4 .section-2 .section-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 158px;
+    margin-right: 20px;
+}
+
+.hdd-img4 .section-2 .section-2 #img23{
+    width: 158px; height: 158px;
+    margin-bottom: 20px;
+    display: flex;
+
+    background: url(../images/s6.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hdd-img4 .section-2 .section-2 #img24{
+    width: 158px; height: 158px;
+    display: flex;
+
+    background: url(../images/s7.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hdd-img4 .section-2 #img25{
+    width:564px; height: 336px;
+    display: flex;
+
+    background: url(../images/s8.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hdd-img4 #img26{
+    width: 336px; height: 336px;
+    margin-right: 0px;
+    display: flex;
+
+    background: url(../images/s9.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.hdd-img5 #img27{
+    width: 564px; height: 336px;
+    margin-right: 20px;
+    
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: url(../images/s10.jpeg);
+}
+.hdd-img5 .section-2{
+    width: 516px; height: 336px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.hdd-img5 .section-2 #img28{
+    width: 336px; height: 336px;
+    margin-right: 20px;
+
+    display: flex;
+    background: url(../images/s11.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hdd-img5 .section-2 .section-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 158px;
+}
+.hdd-img5 .section-2 .section-2 a{
+    width: 158px; height: 158px;
+    margin-bottom: 20px;
+    display: flex;
+
+    background: url(../images/s12.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hdd-img5 .section-2 .section-2 a:last-child{
+    display: flex;
+    background: url(../images/s13.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hdd-img6 .section-2{
+    width: 742px;height: 336px;
+    display: flex;
+    margin-right: 20px;
+    flex-wrap: nowrap;
+}
+.hdd-img6 .section-2 .section-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 158px;
+    margin-right: 20px;
+}
+
+.hdd-img6 .section-2 .section-2 #img31{
+    width: 158px; height: 158px;
+    margin-bottom: 20px;
+    display: flex;
+
+    background: url(../images/s14.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hdd-img6 .section-2 .section-2 #img32{
+    width: 158px; height: 158px;
+    display: flex;
+
+    background: url(../images/s15.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hdd-img6 .section-2 #img33{
+    width:564px; height: 336px;
+    display: flex;
+
+    background: url(../images/s16.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hdd-img6 #img34{
+    width: 336px; height: 336px;
+    margin-right: 0px;
+    display: flex;
+
+    background: url(../images/s17.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.sub-btn #sub-btn:hover{
+    background-color: rgb(192, 0, 0);
+    color: white;
+}
 /* 내부 본문 끝 */
