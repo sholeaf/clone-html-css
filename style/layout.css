@@ -1723,18 +1723,18 @@ footer{
 
 
 
-.sns-area #naver_cafe::after{
+/* .sns-area #naver_cafe::after{
     content: url(../images/cafe.png);
     background-position: -591px -667px;
     background-repeat: no-repeat;
     filter: opacity(0.5) drop-shadow(0 0 0 white);
-}
-.sns-area #facebook{
+} */
+/* .sns-area #facebook{
     
 }
 .sns-area #naver_band{
 
-}
+} */
 
 .hdd-p{
     display: flex;
