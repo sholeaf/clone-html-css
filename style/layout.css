@@ -1653,21 +1653,59 @@ h5 {
     background-color: rgb(192, 0, 0);
     color: white;
 }
+.bottom-nav{
+    display: block;
+    position: fixed;
+    width: 70px;
+    bottom: 30px; right: 30px;
+}
+.bottom-nav .map{
+    margin-bottom: 20px;
+    display:flex;
+   
+    overflow: hidden;
+    position: relative;
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    background-color: rgb(231, 0, 0);
+}
+.map p{
+    display: flex;
+}
+.map-icon{
+    display: flex;
+    background: url(../images/icon.png) no-repeat -545px -546px;
+	width: 21px;
+	height: 26px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    filter: invert(100%);
+}
 
+.map:hover{
+    width: 100px;
+    visibility: visible;
+    border-radius: 30%;
+}
 /* 내부 본문 끝 */
 
 
 /* footer */
 footer{
     width: 100%;
-    height: 283px;
+    height: 223px;
+    background-color: black;
+    min-width: 1280px;
 }
 
 .footer-area{
-    width: 100%;
+    width: 1100px;
+    margin: 0 auto;
     height: 223px;
-    padding: 58px 401.5px 0 401.5px;
-    background-color: black;
+    padding: 58px 0;
+    
 }
 .footer-area .footer-nav{
     width: 1100px; height: 45px;
@@ -1688,16 +1726,31 @@ footer{
 .footer-nav .search a{
     display: block;
     float: left;
+    
 }
 
 .footer-nav .search #drop-img{
-    
     background: url('../images/icon.png') no-repeat -582px -276px;
 	width: 8px;
 	height: 4px;
     position: absolute;
     top: 20px;
     right: 20px;
+}
+.footer-nav .help{
+    width: 50px; height: 50px;
+    line-height: 45px;
+    position: relative;
+    display: inline-block;
+}
+.footer-nav .help #icon-help{
+    display: block;
+    width: 20px; height: 20px;
+    background: url(../images/help.png);
+    background-size: cover;
+    filter: opacity(0.5) drop-shadow(0 0 0 white);
+    margin-left: 10px;
+    margin-top: 12px;
 }
 
 .footer-nav .sns-area{
@@ -1712,6 +1765,7 @@ footer{
     display: block;
     width: 40px; height: 40px;
     font-size: 30px;
+    position: relative;
 }
 
 .sns-area #naver_blog{
@@ -1721,21 +1775,92 @@ footer{
   
 }
 
-
-
-/* .sns-area #naver_cafe::after{
-    content: url(../images/cafe.png);
-    background-position: -591px -667px;
-    background-repeat: no-repeat;
+.sns-area #naver_cafe{
+    background: url(../images/cafe1.png);
+    filter: opacity(0.5) drop-shadow(0 0 0 black);
+    background-size: cover;
+    margin-left: 20px;
+}
+.sns-area #naver_cafe::before{
+    content: "•";
+    position: absolute;
+    left: -10px;
+    font-weight: bold;
+    font-size: 15px;
     filter: opacity(0.5) drop-shadow(0 0 0 white);
-} */
-/* .sns-area #facebook{
+}
+.sns-area #facebook{
+    background: url(../images/facebook.png);
+    filter: opacity(0.5) drop-shadow(0 0 0 white);
+    width: 37px; height: 37px;
+    background-size: cover;
+    margin-left: 20px;
     
 }
+.sns-area #facebook::before{
+    content: "•";
+    position: absolute;
+    left: -13px;
+    font-weight: bold;
+    font-size: 15px;
+    filter: opacity(0.5) drop-shadow(0 0 0 black);
+}
 .sns-area #naver_band{
+    background: url(../images/band.png);
+    filter: opacity(0.5) drop-shadow(0 0 0 white);
+    width: 37px; height: 37px;
+    background-size: cover;
+    margin-left: 20px;
+}
 
-} */
+.sns-area #naver_band::before{
+    content: "•";
+    position: absolute;
+    left: -10px;
+    font-weight: bold;
+    font-size: 15px;
+    filter: opacity(0.5) drop-shadow(0 0 0 white);
+}
 
+.report-area{
+    margin-top: 15px;
+}
+
+.report-area #report{
+    font-size: 14px;
+    letter-spacing: -1px;
+    border-bottom: 1px solid rgb(151, 149, 149);
+}
+
+.footer-corp{
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    min-width: 1280px;
+}
+.corp{
+    display: flex;
+    justify-content: center;
+}
+#corp-logo::before{
+    content: '' url(../images/naver.jpg);
+    margin-right: 5px;
+}
+#corp-logo{
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.footer-corp a{
+    font-size: 12px;
+    line-height: 50px;
+    display: inline-block;
+}
+
+#corp-text{
+    color:#666;
+    margin-left: 30px;
+}
 .hdd-p{
     display: flex;
     overflow: hidden;
