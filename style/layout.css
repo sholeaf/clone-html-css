@@ -1661,24 +1661,43 @@ h5 {
 }
 .bottom-nav .map{
     margin-bottom: 20px;
-    display:flex;
+    display:inline-block;
    
     overflow: hidden;
     position: relative;
     width: 60px; height: 60px;
     border-radius: 50%;
-    background-color: rgb(231, 0, 0);
+    background-color: rgb(221, 0, 0);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.bottom-nav .map:hover{
+    transform: translateX(-100px);
+    width: 170px; height: 60px;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+.go-map{
+    width: 250px; height: 60px;
+    display: inline-block;
+    overflow: hidden;
 }
 .map p{
-    display: flex;
+    display: inline-block;
+    width: 150px;
+    line-height: 0px;
+    position:absolute;
+    top: 29px;
+    left: 58px;
+    font-size: 26px;
+    color: white;
 }
 .map-icon{
-    display: flex;
+    display: inline-block;
     background: url(../images/icon.png) no-repeat -545px -546px;
 	width: 21px;
 	height: 26px;
     background-repeat: no-repeat;
-    margin-top: 10px;
+    margin-top: 17px;
     margin-left: 20px;
     margin-right: 10px;
     filter: invert(100%);
@@ -1689,6 +1708,28 @@ h5 {
     visibility: visible;
     border-radius: 30%;
 }
+
+.go-top{
+    display:inline-block;
+   
+    overflow: hidden;
+    position: relative;
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    background-color:white;
+    box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.go-to-top{
+    display: block;
+    background: url(../images/icon.png) no-repeat -155px -508px;
+	width: 31px;
+	height: 26px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+
 /* 내부 본문 끝 */
 
 
